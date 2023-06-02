@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transición de desvanecimiento</title>
+  <style>
+    #myElement {
+      opacity: 1;
+      transition: opacity 0.5s ease;
+      transform: translateX(-100%);
+      font-size: 24px;
+      color: black;
+    }
+
+    .fade-in {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+
+    .fade-out {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  </style>
+</head>
+<body>
+  <button id="buttonLeft">Botón Izquierdo</button>
+  <button id="buttonRight">Botón Derecho</button>
+  <div id="myElement">Texto de ejemplo</div>
+
+  <script>
+    const buttonLeft = document.getElementById('buttonLeft');
+    const buttonRight = document.getElementById('buttonRight');
+    const element = document.getElementById('myElement');
+
+    buttonLeft.addEventListener('click', () => {
+      element.classList.remove('fade-in');
+      element.classList.add('fade-out');
+    });
+
+    buttonRight.addEventListener('click', () => {
+      element.classList.remove('fade-out');
+      element.classList.add('fade-in');
+    });
+  </script>
+</body>
+</html>
+
+<div id="all-content-slider">
+  <h2>Contenido 1</h2>
+  <img src="logo.jpg" alt="Imagen"><br>
+  <a href="#" id="a-content-slider">Ver Mas</a>
+</div>
+<div class="btt-content-slider">
+<button onclick="cambiarContenido('izquierda')" id="prev-button"><i class="fas fa-arrow-left"></i></button>
+<button onclick="cambiarContenido('derecha')" id="next-button"><i class="fas fa-arrow-right"></i></button> 
+</div>  
+

@@ -1,0 +1,208 @@
+html{
+    background-color: whitesmoke;
+}
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid lightgrey;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.mid-content{
+    background-color: white;
+}
+#fb{
+    color: #3b5998;
+}
+
+#yt{
+    color: red;
+}
+
+#ig{
+    color: #E4405F;
+}
+
+.articulos-encabezados:hover{
+    background-color: lightgrey;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.articulos-encabezados{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+;
+}
+
+footer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+.logo{
+    background-color: white;
+    text-align: center;
+}
+
+.encabezado{
+    background-color: white;
+}
+
+/* Escritorio extra grande */
+/*@media only screen and (min-width: 1200px){  */
+    h1{
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 5px 15px rgba(1, 2, 0, 0.5);
+        position: relative;
+        font-family: 'Teko', sans-serif;
+        margin-bottom: 40px;
+    }
+    
+    #logo{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        animation-name: moverLogo;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .logo{
+        height: 200px;
+    }
+    
+    .encabezado{
+        text-align: center;
+    }
+    
+    .articulos-encabezados{
+        margin-left: 88px;
+        font-size: 15px;
+        display: inline-block;
+    }
+    
+    .bars{
+        display: none;
+    }
+    
+    .redes{
+        display: none;
+    }
+    
+    .redes-pc{
+        font-size: 40px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .mid-content{
+        background-image: url("fondo3.jfif");
+        border: 1px solid lightgray;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%;
+    }
+    #all-content-slider{
+        text-align: center;
+        margin-top: 320px;
+        transition: ease-in-out 0.5s;
+    }
+    .font-mid{
+        text-align: center;
+        font-family: Teko, sans-serif;
+        color: white;
+        text-shadow: 1px ;
+        font-size: 3.7vw;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    #all-content-slider img{
+        width: 400px;
+        height: 400px;
+    }
+    #all-content-slider a{
+        position: relative;
+        bottom: 65px;
+        background-color: grey;
+        border-radius: 10%;
+        padding: 9px;
+        font-size: 25px;
+    }
+    #all-content-slider a:hover{
+        background-color: lightgrey;
+    }
+    .btt-content-slider{
+        text-align: center;
+    }
+    
+    footer{
+        padding: 120px;
+    }
+    
+    .content a{
+      margin-top: 10px;
+      position: relative;
+      bottom: 65px;
+      background-color: white;
+      color: black;
+      font-size: 23px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .content a:hover{
+        background-color: lightgray;
+    }
+    
+    .butt{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #prev-button{
+        margin-right: 10px;
+        background-color: black;
+        color: white;
+        font-size: 40px;
+        padding: 10px;
+        width: 100px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    #prev-button:hover{
+        background-color: lightgrey;
+    }
+    
+    #next-button:hover{
+        background-color: lightgrey;
+    }
+    
+    #next-button{
+        margin-left: 75px;
+        background-color: black;
+        color:  white;
+        font-size: 40px;
+        padding: 10px;
+        width: 100px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    @keyframes moverLogo {
+        0% {
+            left: 200px;
+        }
+
+        100% {
+            left: calc(100% - 410px);
+        }
+    }
